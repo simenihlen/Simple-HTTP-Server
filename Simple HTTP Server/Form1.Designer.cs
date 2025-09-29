@@ -40,6 +40,7 @@
             this.startServerBtn.TabIndex = 0;
             this.startServerBtn.Text = "Start Server";
             this.startServerBtn.UseVisualStyleBackColor = true;
+            this.startServerBtn.Click += new System.EventHandler(this.startServerBtn_Click);
             // 
             // stopServerBtn
             // 
@@ -50,6 +51,7 @@
             this.stopServerBtn.TabIndex = 1;
             this.stopServerBtn.Text = "Stop Server";
             this.stopServerBtn.UseVisualStyleBackColor = true;
+            this.stopServerBtn.Click += new System.EventHandler(this.stopServerBtn_Click);
             // 
             // serverPortText
             // 
@@ -103,6 +105,7 @@
             this.Controls.Add(this.startServerBtn);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
